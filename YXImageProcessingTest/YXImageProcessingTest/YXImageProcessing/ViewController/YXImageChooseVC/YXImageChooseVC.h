@@ -11,20 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^YXImageChooseVCBackBlock)(void);
-
-@interface YXImageChooseVC : BaseViewController<JXCategoryListContentViewDelegate>
+@interface YXImageChooseVC : UIViewController
 
 /** 专辑数据 */
 @property (nonatomic, strong) YXChooseImgAlbumModel *albumModel;
 /** 基础数据 */
 @property (nonatomic, strong) YXChooseMediaModel *mediaModel;
-
-/** 栏目切换视图 */
-@property (nonatomic, strong) JXCategoryTitleView *categoryView;
-
-/** 关闭回调 */
-@property (nonatomic, copy) YXImageChooseVCBackBlock yxImageChooseVCBackBlock;
 
 @end
 
