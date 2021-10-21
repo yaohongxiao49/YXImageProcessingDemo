@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YXImageEditBottomMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3F-m9-AfQ" customClass="KMButton">
+                    <rect key="frame" x="0.0" y="0.0" width="83" height="203"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="滤镜" image="滤镜">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4vU-6C-eZT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeV-gd-Eja" customClass="KMButton">
+                    <rect key="frame" x="83" y="0.0" width="82.5" height="203"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="文字" image="文字">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="JXy-Nb-AGD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6r-IO-NE8" customClass="KMButton">
+                    <rect key="frame" x="165.5" y="0.0" width="83" height="203"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="贴纸" image="贴纸">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7ec-nS-5DJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xd-OZ-7GS" customClass="KMButton">
+                    <rect key="frame" x="248.5" y="0.0" width="82.5" height="203"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="标签" image="标签">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lpr-NL-Ojh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qz-9T-Mef" customClass="KMButton">
+                    <rect key="frame" x="331" y="0.0" width="83" height="203"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="贴纸" image="贴纸">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1aa-BH-Y21"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GeV-gd-Eja" firstAttribute="centerY" secondItem="R3F-m9-AfQ" secondAttribute="centerY" id="0EY-Uk-pjF"/>
+                <constraint firstItem="0Xd-OZ-7GS" firstAttribute="centerY" secondItem="R3F-m9-AfQ" secondAttribute="centerY" id="1uF-HQ-bFx"/>
+                <constraint firstItem="GeV-gd-Eja" firstAttribute="width" secondItem="R3F-m9-AfQ" secondAttribute="width" id="22G-AM-njM"/>
+                <constraint firstItem="z6r-IO-NE8" firstAttribute="centerY" secondItem="R3F-m9-AfQ" secondAttribute="centerY" id="6fU-Wq-9oY"/>
+                <constraint firstItem="z6r-IO-NE8" firstAttribute="height" secondItem="R3F-m9-AfQ" secondAttribute="height" id="82Z-JJ-rqd"/>
+                <constraint firstAttribute="bottom" secondItem="R3F-m9-AfQ" secondAttribute="bottom" id="BFA-xt-bdH"/>
+                <constraint firstItem="5qz-9T-Mef" firstAttribute="leading" secondItem="0Xd-OZ-7GS" secondAttribute="trailing" id="CWH-02-fSp"/>
+                <constraint firstItem="0Xd-OZ-7GS" firstAttribute="height" secondItem="R3F-m9-AfQ" secondAttribute="height" id="DMc-0l-8El"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5qz-9T-Mef" secondAttribute="trailing" id="K62-2R-K04"/>
+                <constraint firstItem="GeV-gd-Eja" firstAttribute="height" secondItem="R3F-m9-AfQ" secondAttribute="height" id="Lfs-Of-c0i"/>
+                <constraint firstItem="z6r-IO-NE8" firstAttribute="width" secondItem="R3F-m9-AfQ" secondAttribute="width" id="NGl-RA-2mZ"/>
+                <constraint firstItem="5qz-9T-Mef" firstAttribute="height" secondItem="R3F-m9-AfQ" secondAttribute="height" id="Qeb-JG-JZq"/>
+                <constraint firstItem="5qz-9T-Mef" firstAttribute="centerY" secondItem="R3F-m9-AfQ" secondAttribute="centerY" id="RTu-gq-hiT"/>
+                <constraint firstItem="z6r-IO-NE8" firstAttribute="leading" secondItem="GeV-gd-Eja" secondAttribute="trailing" id="Yja-17-b6O"/>
+                <constraint firstItem="R3F-m9-AfQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cyq-pN-UUt"/>
+                <constraint firstItem="5qz-9T-Mef" firstAttribute="width" secondItem="R3F-m9-AfQ" secondAttribute="width" id="kas-Kd-9Xl"/>
+                <constraint firstItem="R3F-m9-AfQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oxs-fa-cXI"/>
+                <constraint firstItem="GeV-gd-Eja" firstAttribute="leading" secondItem="R3F-m9-AfQ" secondAttribute="trailing" id="scz-hk-AzQ"/>
+                <constraint firstItem="0Xd-OZ-7GS" firstAttribute="leading" secondItem="z6r-IO-NE8" secondAttribute="trailing" id="tjF-JO-Hmo"/>
+                <constraint firstItem="0Xd-OZ-7GS" firstAttribute="width" secondItem="R3F-m9-AfQ" secondAttribute="width" id="xfE-EF-80D"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fiveBtn" destination="5qz-9T-Mef" id="OSa-vg-Tjh"/>
+                <outlet property="fourBtn" destination="0Xd-OZ-7GS" id="Q4K-o0-vbf"/>
+                <outlet property="oneBtn" destination="R3F-m9-AfQ" id="Zhd-qL-1At"/>
+                <outlet property="threeBtn" destination="z6r-IO-NE8" id="aZh-C4-MQz"/>
+                <outlet property="twoBtn" destination="GeV-gd-Eja" id="qX7-DA-rwq"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="120.87053571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="文字" width="20" height="20"/>
+        <image name="标签" width="22" height="22"/>
+        <image name="滤镜" width="22" height="22"/>
+        <image name="贴纸" width="22" height="22"/>
+    </resources>
+</document>

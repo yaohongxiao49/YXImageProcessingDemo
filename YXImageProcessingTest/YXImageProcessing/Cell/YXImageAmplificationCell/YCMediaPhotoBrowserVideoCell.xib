@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YCMediaPhotoBrowserVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAf-UB-YmP" customClass="YCMediaPhotoBrowserPlayerView">
+                        <rect key="frame" x="20" y="0.0" width="280" height="480"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWT-NG-4K3">
+                                <rect key="frame" x="0.0" y="436" width="280" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJz-qQ-N8M">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="n4U-iq-DUj"/>
+                                        </constraints>
+                                        <state key="normal" image="YXImageVideoPlayImg"/>
+                                        <connections>
+                                            <action selector="clickPlay:" destination="gTV-IL-0wX" eventType="touchUpInside" id="b6P-ve-Mt2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Is-hb-NXn">
+                                        <rect key="frame" x="45" y="0.0" width="37" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61S-Io-ZB3">
+                                        <rect key="frame" x="228" y="0.0" width="37" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sw2-fb-ZUh" customClass="YCProgressSlider">
+                                        <rect key="frame" x="90" y="7" width="130" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QxV-DR-qet"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jJz-qQ-N8M" firstAttribute="top" secondItem="XWT-NG-4K3" secondAttribute="top" id="A38-oN-enw"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Is-hb-NXn" secondAttribute="bottom" id="BNI-mD-GRL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sw2-fb-ZUh" secondAttribute="trailing" constant="60" id="CNU-HY-kLj"/>
+                                    <constraint firstItem="8Is-hb-NXn" firstAttribute="top" secondItem="XWT-NG-4K3" secondAttribute="top" id="Fyd-fM-WHY"/>
+                                    <constraint firstAttribute="bottom" secondItem="61S-Io-ZB3" secondAttribute="bottom" id="SrL-jg-SOb"/>
+                                    <constraint firstItem="8Is-hb-NXn" firstAttribute="leading" secondItem="jJz-qQ-N8M" secondAttribute="trailing" id="Zvi-l5-9zJ"/>
+                                    <constraint firstItem="61S-Io-ZB3" firstAttribute="top" secondItem="XWT-NG-4K3" secondAttribute="top" id="cWO-IH-K8u"/>
+                                    <constraint firstAttribute="bottom" secondItem="jJz-qQ-N8M" secondAttribute="bottom" id="gx9-dx-K3t"/>
+                                    <constraint firstItem="Sw2-fb-ZUh" firstAttribute="centerY" secondItem="XWT-NG-4K3" secondAttribute="centerY" id="iCd-YA-maf"/>
+                                    <constraint firstAttribute="trailing" secondItem="61S-Io-ZB3" secondAttribute="trailing" constant="15" id="uC1-Qo-xd1"/>
+                                    <constraint firstAttribute="height" constant="44" id="ukX-y0-IWQ"/>
+                                    <constraint firstItem="jJz-qQ-N8M" firstAttribute="leading" secondItem="XWT-NG-4K3" secondAttribute="leading" id="vI9-AE-Qdv"/>
+                                    <constraint firstItem="Sw2-fb-ZUh" firstAttribute="leading" secondItem="XWT-NG-4K3" secondAttribute="leading" constant="90" id="xet-nI-pvq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XWT-NG-4K3" secondAttribute="bottom" id="Fxa-Y5-SbK"/>
+                            <constraint firstAttribute="trailing" secondItem="XWT-NG-4K3" secondAttribute="trailing" id="hO4-rE-vAE"/>
+                            <constraint firstItem="XWT-NG-4K3" firstAttribute="leading" secondItem="wAf-UB-YmP" secondAttribute="leading" id="vmR-hl-NQg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wAf-UB-YmP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OvG-zM-akZ"/>
+                <constraint firstItem="wAf-UB-YmP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="X2Z-2d-ZHB"/>
+                <constraint firstAttribute="bottom" secondItem="wAf-UB-YmP" secondAttribute="bottom" id="cWG-ap-lrL"/>
+                <constraint firstAttribute="trailing" secondItem="wAf-UB-YmP" secondAttribute="trailing" constant="20" id="fm8-Jn-X7i"/>
+            </constraints>
+            <connections>
+                <outlet property="playButton" destination="jJz-qQ-N8M" id="wln-Zm-wfZ"/>
+                <outlet property="playTimeLabel" destination="8Is-hb-NXn" id="iDg-pc-GRD"/>
+                <outlet property="playerView" destination="wAf-UB-YmP" id="5vG-L3-n5l"/>
+                <outlet property="progressSlider" destination="Sw2-fb-ZUh" id="8Hi-Ae-ZnX"/>
+                <outlet property="timeBaseView" destination="XWT-NG-4K3" id="6on-lt-5fG"/>
+                <outlet property="timeBaseViewBottom" destination="Fxa-Y5-SbK" id="CNv-ww-9B2"/>
+                <outlet property="totalTimeLabel" destination="61S-Io-ZB3" id="Gde-XR-wya"/>
+            </connections>
+            <point key="canvasLocation" x="80" y="89"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="YXImageVideoPlayImg" width="60" height="60"/>
+    </resources>
+</document>
